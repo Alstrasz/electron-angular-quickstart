@@ -1,0 +1,23 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "dist/main.js",
+  "scripts": {
+    "back:build": "npx tsc",
+    "back:run": "npm run back:build && electron dist/main.js",
+    "front:build": "npm --prefix ./front run build",
+    "electron:rebuild": "./node_modules/.bin/electron-rebuild -f",
+    "build-all": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "13.5.2",
+    "electron-builder": "^22.13.1",
+    "typescript": "^4.4.4",
+    "electron-rebuild": "^3.2.2"
+  }
+}
