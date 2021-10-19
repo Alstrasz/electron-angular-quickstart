@@ -7,7 +7,6 @@ import { BaseComponent } from './base/base.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateUniversalLoaderService } from "./translate-universal-loader.service";
 import { isPlatformServer } from '@angular/common';
 

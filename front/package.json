@@ -17,7 +17,6 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@ngx-translate/core": "^13.0.0",
-    "@ngx-translate/http-loader": "^6.0.0",
     "bulma": "^0.9.3",
     "rxjs": "^7.4.0",
     "tslib": "^2.3.0",
