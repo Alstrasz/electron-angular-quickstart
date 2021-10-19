@@ -10,6 +10,7 @@ export class AppComponent {
     title = 'front';
 
     constructor ( private translate: TranslateService ) {
+        // start tranlation service
         this.translate.use( "en" );
     }
 }

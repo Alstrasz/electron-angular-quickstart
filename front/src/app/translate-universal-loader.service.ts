@@ -1,9 +1,11 @@
 import { TranslateLoader } from '@ngx-translate/core';
 import { Observable, of } from 'rxjs';
 
+// import translation
 import * as contentEn from '../assets/i18n/en.json';
 import * as contentRu from '../assets/i18n/ru.json';
 
+// declaare translation
 const TRANSLATIONS = {
   en: contentEn,
   ru: contentRu

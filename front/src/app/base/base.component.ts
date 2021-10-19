@@ -10,6 +10,7 @@ import { ipcRenderer } from 'electron'
 export class BaseComponent implements OnInit {
 
     constructor( private translate: TranslateService ) {
+        // test communictaion between frontend and backend
         ipcRenderer.on("pong", ( event, n ) => {
             console.log("pong", n);
             setTimeout(() => {
@@ -17,6 +18,7 @@ export class BaseComponent implements OnInit {
             }, 1000);
         });
         ipcRenderer.send("ping", 0);
+        
     }
 
     ngOnInit(): void {

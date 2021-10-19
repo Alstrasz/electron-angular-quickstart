@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BaseComponent } from './base/base.component';
 
 const routes: Routes = [
+    // declare routes
     { path: 'base', component: BaseComponent },
     { path: 'test',  }
   ];
