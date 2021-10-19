@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { ipcRenderer } from 'electron'
 
 @Component({
@@ -8,7 +9,7 @@ import { ipcRenderer } from 'electron'
 })
 export class BaseComponent implements OnInit {
 
-    constructor() {
+    constructor( private translate: TranslateService ) {
         ipcRenderer.on("pong", ( event, n ) => {
             console.log("pong", n);
             setTimeout(() => {
@@ -21,4 +22,7 @@ export class BaseComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    change_locale() {
+        this.translate.use( this.translate.currentLang == "en" ? "ru" : "en" );
+    }
 }
