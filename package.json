@@ -8,7 +8,9 @@
     "back:run": "npm run back:build && electron dist/main.js",
     "front:build": "npm --prefix ./front run build",
     "electron:rebuild": "./node_modules/.bin/electron-rebuild -f",
-    "build-all": "npm run front:build && npm run back:build && electron-builder"
+    "all:build": "npm run front:build && npm run back:build",
+    "all:run": "npm run all:build && electron dist/main.js",
+    "all:compile": "npm run front:build && npm run back:build && electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [],
